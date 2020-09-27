@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"  targetNamespace="http://yaksha.edu/calculatorapp" xmlns:tns="http://yaksha.edu/calculatorapp" elementFormDefault="qualified">
+<xs:element name="GetCalculationRequest">
+<xs:complexType>
+ <xs:sequence>
+  <xs:element name="operand1" type="xs:int"/>
+  <xs:element name="operator" type="xs:string"/>
+  <xs:element name="operand2" type="xs:int"/>
+ </xs:sequence>
+ </xs:complexType>
+ </xs:element>
+ 
+ <xs:element name="GetCalculationResponse">
+ <xs:complexType>
+ <xs:sequence>
+  <xs:element name="Calculator" type="tns:Calculator"></xs:element>
+ </xs:sequence>
+ </xs:complexType>
+ </xs:element>
+ 
+ <xs:complexType name="Calculator">
+   <xs:sequence>
+    <xs:element name="operand1" type="xs:int"/>
+  <xs:element name="operator" type="xs:string"/>
+  <xs:element name="operand2" type="xs:int"/>
+   <xs:element name="result" type="xs:int"/>
+     </xs:sequence>
+ </xs:complexType>
+
+</xs:schema>

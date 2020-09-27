@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GetCalculationRequest xmlns="http://yaksha.edu/calculatorapp" xsi:schemaLocation="http://yaksha.edu/calculatorapp calculator.xsd"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<operand1>5</operand1>
+<operator>+</operator>
+<operand2>2</operand2>
+</GetCalculationRequest>
